@@ -27,7 +27,7 @@ global:
     platform: ricplt
     aux: ricaux
   # Docker registry from which RIC platform components pull the images
-  repository: docker.io
+  repository: nexus3.o-ran-sc.org:10002/o-ran-sc
 
   # Name of the K8S docker credential that is onboarded by 20-credential
   repositoryCred: docker-reg-cred
@@ -61,10 +61,12 @@ global:
       deployNameSpace: ricinfra
       image:
         tillerTLSSecrets:
-          name: akrainoenea/it-dep-secret
+          repository: akrainoenea
+          name: it-dep-secret
           tag: 0.0.2
         tiller:
-          name: jessestuart/tiller
+          repository: jessestuart
+          name: tiller
           tag: v2.12.3
       secret:
         create: true
