@@ -161,7 +161,7 @@ rtmgr:
   # repositoryOverride:
   repositoryOverride: akrainoenea
   image:
-    name: rtmgr
+    name: ric-plt-rtmgr
     tag: 0.3.3
   loglevel: DEBUG
 
@@ -171,7 +171,7 @@ submgr:
   # repositoryOverride:
   repositoryOverride: akrainoenea
   image:
-    name: submgr
+    name: ric-plt-submgr
     tag: 0.10.7
 
 # VESPA Manager
@@ -180,7 +180,7 @@ vespamgr:
   # repositoryOverride:
   repositoryOverride: akrainoenea
   image:
-    name: vespamgr
+    name: ric-plt-vespamgr
     tag: 0.0.5
   prometheusurl: "http://rec-prometheus-server.default"
 
@@ -188,7 +188,7 @@ vespamgr:
 rsm:
   repositoryOverride: akrainoenea
   image:
-    name: resource-status-manager
+    name: ric-plt-resource-status-manager
     tag: 2.0.7
 
 # Jaeger Adapter
