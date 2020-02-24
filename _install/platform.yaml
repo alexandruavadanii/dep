@@ -35,7 +35,7 @@ global:
   imagePullPolicy: Always
 
   # Helm repo that will be used by xApp manager
-  helmRepository: "http://aux-entry/helm"
+  helmRepository: "http://192.167.10.211:32080/helm"
 
   # Certificate of the helm repo
   helmRepositoryCert: xapp-mgr-certs
@@ -204,7 +204,7 @@ jaegeradapter:
 extsvcplt:
   auxip:
     # The ip address of the aux cluster ingress controller
-    10.0.2.101
+    192.167.10.211
   ricip:
     # The ip address of the ric cluster ingress controller
-    10.0.2.100
+    192.167.10.211
