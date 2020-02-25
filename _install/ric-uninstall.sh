@@ -10,4 +10,8 @@ helm list | grep -o -P 'r1-[^\ \t]*' | xargs helm del --purge
 
 
 kubectl delete secrets -n ricinfra secret-helm-client-ricxapp secret-tiller-ricxapp
+kubectl delete secrets -n ricinfra secret-chartmuseum
 
+kubectl delete daemonsets,replicasets,services,deployments,pods,rc,secrets --namespace=ricxapp --all
+
+kubectl delete namespaces ricaux ricinfra ricplt ricxapp
